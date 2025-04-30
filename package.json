@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "flowbite": "^3.1.2",
+    "tailwindcss": "^4.1.4"
+  },
+  "scripts": {
+    "watch": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "serve": "live-server --port=3000",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "live-server": "^1.2.2"
+  }
+}
