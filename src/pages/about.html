@@ -3,8 +3,322 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>EVERLANE</title>
     <link rel="stylesheet" href="../css/output.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="min-w-[20rem]">
+        <section
+          class="flex justify-between w-[90%] m-auto py-5 items-center min-w-[20rem]"
+        >
+          <!-- Navigation Links (hidden on mobile) -->
+          <div class="w-[30%] hidden md:block">
+            <ul class="flex justify-between gap-5 text-[16px]">
+              <li><a href="">Women</a></li>
+              <li><a href="">Men</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Everworld Stories</a></li>
+            </ul>
+          </div>
+
+          <!-- Brand Logo -->
+          <div class="w-[40%] flex md:justify-center justify-start">
+            <h1 class="text-[32px] font-bold">EVERLANE</h1>
+          </div>
+
+          <!-- Icons (hidden on mobile) -->
+          <div class="hidden md:block w-[30%] text-[16px]">
+            <div class="w-full flex justify-end gap-5">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-regular fa-user"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button (visible on mobile) -->
+          <div class="block md:hidden text-[16px]">
+            <button id="menu">
+              <i class="fa-solid fa-sliders"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- Mobile Menu (toggle with JavaScript) -->
+        <div id="mobileMenu" class="hidden md:hidden w-[90%] m-auto pb-4">
+          <ul class="flex flex-col gap-3 text-[16px]">
+            <li><a href="">Women</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Everworld Stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Sub Navigation -->
+        <section class="w-full p-5 border-t border-gray-500 min-w-[20rem]">
+          <ul
+            class="lg:w-[60%] w-full m-auto flex flex-row flex-wrap justify-between gap-5 text-sm text-[16px]"
+          >
+            <li><a href="">About</a></li>
+            <li><a href="">Stores</a></li>
+            <li><a href="">Factories</a></li>
+            <li><a href="">Environmental Initiative</a></li>
+            <li><a href="">Our Carbon Commitment</a></li>
+            <li><a href="">Annual Impact Report</a></li>
+            <li><a href="">Cleaner Fashion</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main class="min-w-[20rem]">
+      <section class="relative w-[100%] h-[100vh] min-w-[20rem]">
+        <img
+          class="w-[100%] h-[100vh]"
+          src="../img/bb1fbfea81b73e2ff9e6b2b67e620361b564f4a7 (1).png"
+          alt=""
+          srcset=""
+        />
+        <div class="absolute top-[20%] left-[30%] right-[30%] text-center">
+          <h2
+            class="xl:text-[100px] lg:text-[72px] md:text-[60px] sm:text-[54px] text-[20px] text-white"
+          >
+            We believe we can all make a difference.
+          </h2>
+          <p class="text-white text-[32px]">
+            <span>Our way: Exceptional quality.</span>
+            <span> Ethical factories. Radical Transparency.</span>
+          </p>
+        </div>
+      </section>
+      <section class="w-full p-[100px] text-center">
+        <h2
+          class="lg:w-[60%] md:w-[80%] sm:w-[90%] w-[95%] m-auto md:text-[60px] sm:text-[54px] text-[20px]"
+        >
+          At Everlane, we want the right choice to be as easy as putting on a
+          great T-shirt. That’s why we partner with the best, ethical factories
+          around the world. Source only the finest materials. And share those
+          stories with you—down to the true cost of every product we make. It’s
+          a new way of doing things. We call it Radical Transparency.
+        </h2>
+      </section>
+      <section class="grid grid-cols-1 sm:grid-cols-2 min-w-80">
+        <div class="">
+          <img
+            class="h-[100%]"
+            src="../img/2cfee16ec9a9385944f51325a44e5e4d6e9102e7.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="flex justify-center items-center min-w-80 bg-[#E6DED8]">
+          <div class="w-[80%] m-5">
+            <p class="text-[20px]">OUR FACTORIES</p>
+            <h2 class="text-[54px]">Our ethical approach.</h2>
+            <p class="text-[20px]">
+              We spend months finding the best factories around the world—the
+              same ones that produce your favorite designer labels. We visit
+              them often and build strong personal relationships with the
+              owners. Each factory is given a compliance audit to evaluate
+              factors like fair wages, reasonable hours, and environment. Our
+              goal? A score of 90 or above for every factory.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="w-[100%] h-[100%] min-w-80">
+        <img
+          src="../img/2d8c8e2f70569cc00059b570d2793f26148d10c0.png"
+          alt=""
+          srcset=""
+        />
+      </section>
+      <section class="grid grid-cols-1 sm:grid-cols-2 min-w-80">
+        <div class="flex justify-center items-center min-w-80 bg-[#E6DED8]">
+          <div class="w-[80%] m-5">
+            <p class="text-[20px]">OUR QUALITY</p>
+            <h2 class="text-[54px]">Designed to last.</h2>
+            <p class="text-[20px]">
+              At Everlane, we’re not big on trends. We want you to wear our
+              pieces for years, even decades, to come. That’s why we source the
+              finest materials and factories for our timeless products— like our
+              Grade-A cashmere sweaters, Italian shoes, and Peruvian Pima tees.
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <img
+            class="h-[100%]"
+            src="../img/afc85739453c78eb5b3b264f7f2762eeea9d92e6.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </section>
+      <section class="grid grid-cols-1 sm:grid-cols-2 min-w-80">
+        <div class="">
+          <img
+            class="h-[100%]"
+            src="../img/02200f4c49680136dc43261855caa3a8a44c4c9e.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="flex justify-center items-center min-w-80">
+          <div class="w-[80%] m-5">
+            <p class="text-[20px]">OUR PRICES</p>
+            <h2 class="text-[54px]">Radically Transparent.</h2>
+            <p class="text-[20px]">
+              We believe our customers have a right to know how much their
+              clothes cost to make. We reveal the true costs behind all of our
+              products—from materials to labor to transportation—then offer them
+              to you, minus the traditional retail markup.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="text-center">
+        <h2 class="text-[64px] m-5">More to Explore</h2>
+        <div
+          class="grid xl:grid-cols-3 gap-5 w-[70%] m-auto my-5 grid-cols-1 lg:grid-cols-2"
+        >
+          <div class="text-center text-[20px]">
+            <img
+              class="w-fit"
+              src="../img/50dcefc6c243c5664d23b56d1bef1c8f74262697.png"
+              alt=""
+            />
+            <p>Our Products</p>
+          </div>
+          <div class="text-center text-[20px]">
+            <img
+              src="../img/aa659a9fcdd2cbbbbed8e39fa682d6b2db202797.png"
+              alt=""
+            />
+            <p>Our stores</p>
+          </div>
+          <div class="text-center text-[20px]">
+            <img
+              src="../img/434c641547ee46061b2eb2f19773baf0a1f12548.png"
+              alt=""
+            />
+            <p>Careers</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="text-center mb-10">
+          <h2 class="text-[64px] font-bold text-gray-800">Our Members</h2>
+          <p class="text-gray-500 mt-2 text-[32px]">Meet our amazing team</p>
+        </div>
+      </section>
+      <section class="grid grid-cols-1 w-[80%] m-auto my-5 gap-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2">
+        <div
+          class="bg-[#E6DED8] rounded-xl shadow-lg p-6 text-center relative overflow-hidden"
+        >
+          <div
+            class="w-32 h-40 mx-auto mb-4 rounded-xl bg-gradient-to-b from-blue-500 to-blue-700"
+          >
+            <img
+              src="../img/02200f4c49680136dc43261855caa3a8a44c4c9e.png"
+              alt="Profile"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+
+          <h2 class="text-xl font-bold text-[#7A7570] leading-tight">Teng</h2>
+          <h2 class="text-2xl font-extrabold text-[#7A7570] mb-2">Menghouy</h2>
+
+          <p class="text-black font-medium mb-4">Student</p>
+          <div class="flex justify-center gap-6 text-blue-700 text-xl">
+            <a href="#"><i class="fab fa-facebook-circle"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div
+          class="bg-[#E6DED8] rounded-xl shadow-lg p-6 text-center relative overflow-hidden"
+        >
+          <div
+            class="w-32 h-40 mx-auto mb-4 rounded-xl bg-gradient-to-b from-blue-500 to-blue-700"
+          >
+            <img
+              src="../img/02200f4c49680136dc43261855caa3a8a44c4c9e.png"
+              alt="Profile"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+
+          <h2 class="text-xl font-bold text-[#7A7570] leading-tight">Teng</h2>
+          <h2 class="text-2xl font-extrabold text-[#7A7570] mb-2">Menghouy</h2>
+
+          <p class="text-black font-medium mb-4">Student</p>
+          <div class="flex justify-center gap-6 text-blue-700 text-xl">
+            <a href="#"><i class="fab fa-facebook-circle"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div
+          class="bg-[#E6DED8] rounded-xl shadow-lg p-6 text-center relative overflow-hidden"
+        >
+          <div
+            class="w-32 h-40 mx-auto mb-4 rounded-xl bg-gradient-to-b from-blue-500 to-blue-700"
+          >
+            <img
+              src="../img/02200f4c49680136dc43261855caa3a8a44c4c9e.png"
+              alt="Profile"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+
+          <h2 class="text-xl font-bold text-[#7A7570] leading-tight">Teng</h2>
+          <h2 class="text-2xl font-extrabold text-[#7A7570] mb-2">Menghouy</h2>
+
+          <p class="text-black font-medium mb-4">Student</p>
+          <div class="flex justify-center gap-6 text-blue-700 text-xl">
+            <a href="#"><i class="fab fa-facebook-circle"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div
+          class="bg-[#E6DED8] rounded-xl shadow-lg p-6 text-center relative overflow-hidden"
+        >
+          <div
+            class="w-32 h-40 mx-auto mb-4 rounded-xl bg-gradient-to-b from-blue-500 to-blue-700"
+          >
+            <img
+              src="../img/02200f4c49680136dc43261855caa3a8a44c4c9e.png"
+              alt="Profile"
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+
+          <h2 class="text-xl font-bold text-[#7A7570] leading-tight">Teng</h2>
+          <h2 class="text-2xl font-extrabold text-[#7A7570] mb-2">Menghouy</h2>
+
+          <p class="text-black font-medium mb-4">Student</p>
+          <div class="flex justify-center gap-6 text-blue-700 text-xl">
+            <a href="#"><i class="fab fa-facebook-circle"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+      const menuBtn = document.getElementById("menu");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
